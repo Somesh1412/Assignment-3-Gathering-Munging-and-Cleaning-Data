@@ -9,8 +9,7 @@ SQL Query :
 
     Select University_name from University Where Country = "USA" order by National_Rank asc limit 5;
 
-
-![Class Diagram](Images A3/Query-1.png)
+<img width="275" alt="Query-1" src="https://user-images.githubusercontent.com/113796019/204119387-a8f00c7d-1472-4cd7-aec5-05b397094e56.png">
 
 2. Top 5 universities that provides best education.
 
