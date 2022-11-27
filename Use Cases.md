@@ -1,9 +1,10 @@
 # Tables: 
 
+![tables](https://user-images.githubusercontent.com/113796019/204119696-cb61753d-65d0-4739-9be3-d05e5fea22a5.jpeg)
 
 # 15 Questions (5 Use Cases each):
 
-1. Top 5 USA universities.
+**1. Top 5 USA universities.**
 
 SQL Query :  
 
@@ -11,7 +12,7 @@ SQL Query :
 
 <img width="275" alt="Query-1" src="https://user-images.githubusercontent.com/113796019/204119387-a8f00c7d-1472-4cd7-aec5-05b397094e56.png">
 
-2. Top 5 universities that provides best education.
+**2. Top 5 universities that provides best education.**
 
 SQL Query :  
    
@@ -19,7 +20,7 @@ SQL Query :
 
 <img width="274" alt="Query-2" src="https://user-images.githubusercontent.com/113796019/204119549-a7eab990-5d18-4ce0-9b6d-42da2bf0a46a.png">
 
-3. Top 10 ambitious institutes.
+**3. Top 10 ambitious institutes.**
 
 SQL Query :  
 
@@ -27,7 +28,7 @@ SQL Query :
 
 <img width="275" alt="Query-3" src="https://user-images.githubusercontent.com/113796019/204119581-f515492c-a20b-4963-b617-3fdbd9d7fc4e.png">
 
-4. Rate the university based on quality of faculty.
+**4. Rate the university based on quality of faculty.**
 
 SQL Query :  
 
@@ -35,7 +36,7 @@ SQL Query :
 
 <img width="345" alt="Query-4" src="https://user-images.githubusercontent.com/113796019/204119589-ab935eca-8264-4e2e-8896-f56197fe710b.png">
 
-5. Count the number of universities with distinct university ratings.
+**5. Count the number of universities with distinct university ratings.**
 
 SQL Query :  
 
@@ -43,7 +44,7 @@ SQL Query :
 
 <img width="176" alt="Query-5" src="https://user-images.githubusercontent.com/113796019/204119593-eaa8edbd-ba24-45d6-926e-e43f415ce499.png">
 
-6. universities that does not require research.
+**6. universities that does not require research.**
 
 SQL Query :  
 
@@ -51,7 +52,7 @@ SQL Query :
 
 <img width="219" alt="Query-6" src="https://user-images.githubusercontent.com/113796019/204119598-43dae9d9-1f33-49d7-a995-1de6ec922096.png">
 
-7. universities that are best fit for a student with GRE score 315 and TOEFL score 110.
+**7. Universities that are best fit for a student with GRE score 315 and TOEFL score 110.**
 
 SQL Query : 
 
@@ -59,7 +60,7 @@ SQL Query :
 
 <img width="345" alt="Query-7" src="https://user-images.githubusercontent.com/113796019/204119604-69ed08f5-1474-404b-b726-e627e33a0c19.png">
 
-8. Should a student with GRE score "321" apply to Northeastern University?
+**8. Should a student with GRE score "321" apply to Northeastern University?**
 
 SQL Query : 
 
@@ -67,7 +68,7 @@ SQL Query :
 
 <img width="220" alt="Query-8" src="https://user-images.githubusercontent.com/113796019/204119607-8f5c7da1-af20-4362-9d4f-8e5755935d67.png">
 
-9. What are the pre requisites to apply to Northeastern University?
+**9. What are the pre requisites to apply to Northeastern University?**
 
 SQL Query : 
 
@@ -75,7 +76,7 @@ SQL Query :
 
 <img width="451" alt="Query-9" src="https://user-images.githubusercontent.com/113796019/204119612-9d7b2c98-040c-412d-a216-74e342868f29.png">
 
-10. Number of students employed from university of Oklahoma.
+**10. Number of students employed from university of Oklahoma.**
 
 SQL Query : 
 
@@ -83,7 +84,7 @@ Select University.University_ID, University_name, Alumni_Employement from Univer
 
 <img width="370" alt="Query-10" src="https://user-images.githubusercontent.com/113796019/204119618-1232ca35-d379-473b-a277-51ab1ab26eab.png">
 
-11. What is the basic GPA requirement and chance of getting admit at 'University of Pennsylvania'?
+**11. What is the basic GPA requirement and chance of getting admit at 'University of Pennsylvania'?**
 
 SQL Query : 
 
@@ -91,7 +92,7 @@ SQL Query :
 
 <img width="171" alt="Query-11" src="https://user-images.githubusercontent.com/113796019/204119623-e40bd8e5-722d-47ef-907d-28c3867006a0.png">
 
-12.	What is the university_rating and national_rank of Cornell University?
+**12. What is the university_rating and national_rank of Cornell University?**
 
 SQL Query : 
 
@@ -99,7 +100,7 @@ SQL Query :
 
 <img width="250" alt="Query-12" src="https://user-images.githubusercontent.com/113796019/204119627-4425ba51-76c2-46d5-ab2e-c928fb8789c7.png">
 
-13.	Which university has highest GRE and GPA requirements?
+**13. Which university has highest GRE and GPA requirements?**
 
 SQL Query : 
 
@@ -107,7 +108,7 @@ SQL Query :
 
 <img width="218" alt="Query-13" src="https://user-images.githubusercontent.com/113796019/204119630-a72fbe56-8fd1-4805-918a-5d3615604d2b.png">
 
-14.	University with highest alumni employment and publications?
+**14. University with highest alumni employment and publications?**
 
 SQL Query : 
 
@@ -115,7 +116,7 @@ SQL Query :
 
 <img width="224" alt="Query-14" src="https://user-images.githubusercontent.com/113796019/204119633-9c68eb2d-e51b-4dc9-9d34-22b1ea99dfcc.png">
 
-15.	View the university with lowest score in the year 2012.
+**15. View the university with lowest score in the year 2012.**
 
 SQL Query : 
 
