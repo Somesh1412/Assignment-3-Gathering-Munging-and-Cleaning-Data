@@ -80,7 +80,7 @@ SQL Query :
 
 SQL Query : 
 
-Select University.University_ID, University_name, Alumni_Employement from University inner join Standards on standards.University_ID = University.University_ID where University_name = 'University of Oklahoma - Norman Campus';
+    Select University.University_ID, University_name, Alumni_Employement from University inner join Standards on standards.University_ID = University.University_ID where University_name = 'University of Oklahoma - Norman Campus';
 
 <img width="370" alt="Query-10" src="https://user-images.githubusercontent.com/113796019/204119618-1232ca35-d379-473b-a277-51ab1ab26eab.png">
 
