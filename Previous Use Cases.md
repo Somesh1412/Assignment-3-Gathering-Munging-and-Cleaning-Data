@@ -14,7 +14,7 @@
 
         Select University.university_ID, University_name, Score, GRE, TOEFL, SOP, LOR, CGPA from university right join requirements on University.university_Id = Requirements.University_ID;
         
-<img width="466" alt="shreyasi-2" src="https://user-images.githubusercontent.com/113796019/204204284-62b32fdb-fcb5-4393-8115-5ec16ff9d695.png">
+    <img width="466" alt="shreyasi-2" src="https://user-images.githubusercontent.com/113796019/204204284-62b32fdb-fcb5-4393-8115-5ec16ff9d695.png">
 
 
 3.  What is the course structure? 
