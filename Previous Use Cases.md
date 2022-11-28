@@ -31,7 +31,7 @@
 
         Select University.university_ID, University_name, GRE from university right join requirements on University.university_Id = Requirements.University_ID where GRE < 320;
         
-<img width="299" alt="shreyasi-5" src="https://user-images.githubusercontent.com/113796019/204204665-ad322a17-b8b5-44dd-88be-c5471614f14a.png">
+    <img width="299" alt="shreyasi-5" src="https://user-images.githubusercontent.com/113796019/204204665-ad322a17-b8b5-44dd-88be-c5471614f14a.png">
 
 6.  What are the total number of international students registered in the university? 
 
@@ -51,7 +51,7 @@
 
         Select University_Name, Country from University;
         
-<img width="221" alt="shreyasi-9" src="https://user-images.githubusercontent.com/113796019/204204701-add56397-edbd-4b1f-8a63-e6ce2160f284.png">
+    <img width="221" alt="shreyasi-9" src="https://user-images.githubusercontent.com/113796019/204204701-add56397-edbd-4b1f-8a63-e6ce2160f284.png">
 
 10. How much is the application fees?
 
@@ -66,7 +66,7 @@
 
         Select University_name, University_rating from University where University_rating BETWEEN 20 and 30;
         
-<img width="275" alt="Somesh-1" src="https://user-images.githubusercontent.com/113796019/204204757-2c3dcd81-f221-42d3-9a31-ca1d38be4ca9.png">
+    <img width="275" alt="Somesh-1" src="https://user-images.githubusercontent.com/113796019/204204757-2c3dcd81-f221-42d3-9a31-ca1d38be4ca9.png">
 
 2.	View the universities which has CGPA cutoff of 3.5 and above.
 
@@ -74,7 +74,7 @@
 
         Select University.University_Id, university_name from University left join Requirements on  University.university_id = Requirements.university_id; where GPA >= 3.5;
         
-<img width="280" alt="Somesh-2" src="https://user-images.githubusercontent.com/113796019/204204789-cf5dd974-1ff9-47a8-843e-dda740103a75.png">
+    <img width="280" alt="Somesh-2" src="https://user-images.githubusercontent.com/113796019/204204789-cf5dd974-1ff9-47a8-843e-dda740103a75.png">
 
 3.	View the universities which offer course of “Computer science and engineering”.
 
@@ -116,7 +116,7 @@
 
         Select University.University_Id, University_Name, GRE, TOEFL from University left join Requirements On University.University_Id = Requirements.University_Id where IELTS >= 7 and TOEFL >= 100;
         
-<img width="350" alt="Somesh-3" src="https://user-images.githubusercontent.com/113796019/204204844-88d087d3-1b53-4578-806c-0a1e941e4e4c.png">
+    <img width="350" alt="Somesh-3" src="https://user-images.githubusercontent.com/113796019/204204844-88d087d3-1b53-4578-806c-0a1e941e4e4c.png">
 
 12.	Determine which universities have GRE requirements such as Verbal > = 155, Quants > = 160, and AWA > = 3.
 
@@ -128,7 +128,7 @@
 
         Select University.University_Id, university_name, Chance_of_Admit from University left join requirements on University.University_ID = Requirements.University_ID where CGPA >= 7;
         
-<img width="384" alt="Somesh-4" src="https://user-images.githubusercontent.com/113796019/204204882-839177e4-b4fc-4bd9-be64-a4a9ed6eb293.png">
+    <img width="384" alt="Somesh-4" src="https://user-images.githubusercontent.com/113796019/204204882-839177e4-b4fc-4bd9-be64-a4a9ed6eb293.png">
 
 14. What is the most popular course of study in the top 10–20 universities?
 
@@ -154,7 +154,7 @@
     
         Select university_name, chance_of_admit from university where university_name = 'Northeastern University';
         
-<img width="203" alt="Preksha-3" src="https://user-images.githubusercontent.com/113796019/204204971-59e77a60-4866-4d79-89e3-6ca33fdc5599.png">
+    <img width="203" alt="Preksha-3" src="https://user-images.githubusercontent.com/113796019/204204971-59e77a60-4866-4d79-89e3-6ca33fdc5599.png">
 
 4.  What is the placement rate of the university ?
 
@@ -162,7 +162,7 @@
     
         Select university_name, alumni_employement from University left join Standards on University.university_id = Standards.university_id;
         
-<img width="263" alt="Preksha-4" src="https://user-images.githubusercontent.com/113796019/204204992-e1612cd6-def1-437b-98ac-f6f005bc20e1.png">
+    <img width="263" alt="Preksha-4" src="https://user-images.githubusercontent.com/113796019/204204992-e1612cd6-def1-437b-98ac-f6f005bc20e1.png">
 
 5.  What is the financial aid of the university? 
 
@@ -174,7 +174,7 @@
     
         Select university_name, TOEFL, national_rank from University left join Requirements on University.university_id = Requirements.university_id order by national_rank;
         
-<img width="270" alt="Preksha-6" src="https://user-images.githubusercontent.com/113796019/204205014-005dad47-f488-4778-9636-7e3a939d76c9.png">
+    <img width="270" alt="Preksha-6" src="https://user-images.githubusercontent.com/113796019/204205014-005dad47-f488-4778-9636-7e3a939d76c9.png">
 
 7.  What is the minimum score required in GRE, TOEFL.
 
@@ -182,7 +182,7 @@
     
         Select university_name, min(GRE), min(TOEFL) from University left join Requirements on University.university_id = Requirements.university_id;
         
-<img width="221" alt="Preksha-7" src="https://user-images.githubusercontent.com/113796019/204205053-c5766259-b529-41d4-847e-89937ae91d1b.png">
+    <img width="221" alt="Preksha-7" src="https://user-images.githubusercontent.com/113796019/204205053-c5766259-b529-41d4-847e-89937ae91d1b.png">
 
 8.  What is the average GPA required for a university?
 
@@ -190,7 +190,7 @@
     
         Select university_name, avg(CGPA) from  University left join Requirements on University.university_id = Requirements.university_id;
         
-<img width="179" alt="Preksha-8" src="https://user-images.githubusercontent.com/113796019/204205073-e3e55304-bc15-4f03-bf8b-3a4cf2653994.png">
+    <img width="179" alt="Preksha-8" src="https://user-images.githubusercontent.com/113796019/204205073-e3e55304-bc15-4f03-bf8b-3a4cf2653994.png">
 
 9.  Are there any scholarships available for international students ? 
 
@@ -202,5 +202,5 @@
     
         Select University_name, chance_of_admit from University left join Requirements on University.university_id = Requirements.university_id where GRE = 320 AND TOEFL = 104 AND university_name = 'Northeastern University';
         
-<img width="223" alt="Preksha-10" src="https://user-images.githubusercontent.com/113796019/204205097-3c132fc7-3ebb-4d86-9e06-4bfecf3d390b.png">
+    <img width="223" alt="Preksha-10" src="https://user-images.githubusercontent.com/113796019/204205097-3c132fc7-3ebb-4d86-9e06-4bfecf3d390b.png">
 
