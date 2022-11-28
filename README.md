@@ -21,8 +21,7 @@
 
 2.  Execute Connector.py: It Connects python to MySQL and creates the schema for the required tables.
 
-3.  Importing Dataset: The tables are created and the dataset is seger
-4.  . We checked the accuracy of the data using audit and used data visualization to make the data more understandable.
+3.  Importing Dataset: The tables are created and the dataset is segergated, and checked the accuracy of the data using audit and used data visualization to make the data more understandable.
 
 4.  Execute Importing_Dataset.py: leverages audit completeness to clean and verify the data, then stores the values in the appropriate tables.
 
