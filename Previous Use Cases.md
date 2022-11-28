@@ -64,7 +64,7 @@
 
     SQL Query:
 
-        Select University_name, University_rating from University where University_rating BETWEEN 20 and 30;
+        Select University_name, national_rank from University where national_rank BETWEEN 20 and 30;
         
     <img width="275" alt="Somesh-1" src="https://user-images.githubusercontent.com/113796019/204204757-2c3dcd81-f221-42d3-9a31-ca1d38be4ca9.png">
 
@@ -72,7 +72,7 @@
 
     SQL Query:
 
-        Select University.University_Id, university_name from University left join Requirements on  University.university_id = Requirements.university_id; where GPA >= 3.5;
+        Select University.University_Id, university_name from University left join Requirements on  University.university_id = Requirements.university_id where CGPA >= 3.5;
         
     <img width="280" alt="Somesh-2" src="https://user-images.githubusercontent.com/113796019/204204789-cf5dd974-1ff9-47a8-843e-dda740103a75.png">
 
@@ -114,7 +114,7 @@
     
     SQL Query:
 
-        Select University.University_Id, University_Name, GRE, TOEFL from University left join Requirements On University.University_Id = Requirements.University_Id where IELTS >= 7 and TOEFL >= 100;
+        Select University.University_Id, University_Name, GRE, TOEFL from University left join Requirements On University.University_Id = Requirements.University_Id  where TOEFL >= 100;
         
     <img width="350" alt="Somesh-3" src="https://user-images.githubusercontent.com/113796019/204204844-88d087d3-1b53-4578-806c-0a1e941e4e4c.png">
 
