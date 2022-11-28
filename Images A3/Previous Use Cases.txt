@@ -1,0 +1,79 @@
+Previous use cases:
+-----Shreyasi-----
+1. What is the tuition Fees of a particular course?
+The dataset does not have a details of tuition fees.
+
+2. What are the admission requirements of a course?
+We have admission requirements of a particular university but since there are no course detials we cannot fetch the requirements os a specific course
+
+Select University.university_ID, University_name, Score, GRE, TOEFL, SOP, LOR, CGPA
+from university right join requirements
+on University.university_Id = Requirements.University_ID
+
+3. What is the course structure? 
+The dataset does not have a details of course structure.
+
+4.Which universities have waived of GRE score?
+All the universities in the dataset have specific GRE score requirement
+
+5.Top universities for GRE score less than 320? 
+Select University.university_ID, University_name, GRE
+from university right join requirements
+on University.university_Id = Requirements.University_ID
+where GRE < 320
+
+6. What are the total number of international students registered in the university? 
+No such information present in the dataset
+
+7. Number of courses available in the university? 
+The dataset does not have a details of courses.
+
+8. What is the course duration? 
+The dataset does not have a details of courses.
+
+9. What is the campus location? 
+Select University_Name, Country
+from University
+
+10. How much is the application fees?
+Application fees details not available in the dataset
+
+
+
+------Preksha------
+1. What are the top 10 universities for a particular course? 
+Database does not have details of course name .
+
+2. What are the top 3 universities in a state? 
+Database does not have a state name.
+
+3. What is the acceptance rate of the university ? 
+Select university_name, chance_of_admit from university 
+where university_name = 'Northeastern University';
+
+4. What is the placement rate of the university ? 
+Select university_name, alumni_employement from University left join Standards 
+on University.university_id = Standards.university_id;
+
+5.What is the financial aid of the university? 
+Database does not have a financial  aid
+
+6.What are the top universities for TOEFL scores less than 100? 
+Select university_name, TOEFL, national_rank from University left join Requirements 
+on University.university_id = Requirements.university_id order by national_rank;
+
+7.What is the minimum score required in GRE, TOEFL . 
+Select university_name, min(GRE), min(TOEFL) from University left join Requirements 
+on University.university_id = Requirements.university_id;
+
+8.What is the average GPA required for a university? 
+Select university_name, avg(CGPA) from  University left join Requirements 
+on University.university_id = Requirements.university_id;
+
+9.Are there any scholarships available for international students ? 
+Scholarship details are not included in the database.
+
+10.What are the chances of getting an admit in the university based of the students profile? 
+Select University_name, chance_of_admit from University left join Requirements 
+on University.university_id = Requirements.university_id 
+where GRE = 320 AND TOEFL = 104 AND university_name = 'Northeastern University';
