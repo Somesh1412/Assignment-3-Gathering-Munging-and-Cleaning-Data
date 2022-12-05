@@ -170,17 +170,20 @@ mycursor.execute("Use assignment3")
 university_sql = "INSERT INTO University(University_ID, University_Name, Country, National_Rank, University_Rating, Chance_of_Admit)VALUES (%s, %s, %s, %s, %s, %s)"
 #mycursor.execute(user_sql, user_val)
 
+print("University table ")
+print(university)
 for i in range(len(university)):
     university_val = (university.iloc[i, 0].astype(str), university.iloc[i, 1], university.iloc[i, 2] ,university.iloc[i, 3].astype(str),university.iloc[i, 4].astype(str),university.iloc[i, 5 ].astype(str))
     mycursor.execute(university_sql, university_val)
 
-
+print("requirements table ")
 print(requirements)
 requirements_sql = "INSERT INTO Requirements(University_ID, Academic_Year, Score, GRE, TOEFL, SOP, LOR, CGPA, Research)VALUES (%s, %s,%s,%s,%s,%s,%s,%s,%s)"
 for i in range(len(requirements)):
     requirements_val = (requirements.iloc[i,0].astype(str), requirements.iloc[i,1].astype(str), requirements.iloc[i,2].astype(str), requirements.iloc[i,3].astype(str), requirements.iloc[i,4].astype(str), requirements.iloc[i,5].astype(str), requirements.iloc[i,6].astype(str), requirements.iloc[i,7].astype(str), requirements.iloc[i,8].astype(str))
     mycursor.execute(requirements_sql, requirements_val)
 
+print("standards table ")
 print(standards)
 Standards_sql = "INSERT INTO Standards(University_ID, Quality_of_Education, Alumni_Employement, Quality_of_Faculty, Patent)VALUES (%s, %s,%s,%s,%s)"
 for i in range(len(standards)):
