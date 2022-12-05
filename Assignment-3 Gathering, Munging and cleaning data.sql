@@ -132,7 +132,11 @@ from University
 10. How much is the application fees?
 Application fees details not availablein the dataset
 
+
+
 ------Preksha------
+
+
 1. What are the top 10 universities for a particular course? 
 Database does not have details of course name .
 
@@ -170,7 +174,11 @@ Select University_name, chance_of_admit from University left join Requirements
 on University.university_id = Requirements.university_id 
 where GRE = 320 AND TOEFL = 104 AND university_name = 'Northeastern University';
 
+
+
 --------Somesh--------
+
+
 1.Search for universities which ranks between top 20-30.
 Select University_name, national_rank from University 
 where national_rank BETWEEN 20 and 30;
@@ -180,13 +188,46 @@ Select University.University_Id, university_name from University left join Requi
 on  University.university_id = Requirements.university_id
 where CGPA >= 3.5;
 
-3.Which universities require a minimum score of 7 bands in IELTS and TOEFL > = 100?
+3.View the universities which offer course of “Computer science and engineering”.
+The dataset does not have details of courses.
+
+4.View the course which has requirements of IELTS<7.0 band.
+The dataset does not have details of courses.
+
+5.View the twitter username for the tweets related to Princeton University.
+The dataset does not have a details of twitter scap data.
+
+6.Which universities have a higher acceptance rate and a lower graduation rate?
+The dataset does not have details of graduation rate.
+
+7.Which universities have a high intake of international students in fall 2022?
+The dataset does not have details of intake of international students.
+
+8.Determine which university is in a developed location and has a vast job market (city or rural).
+No such information present in the dataset.
+
+9.How many universities have a high graduation rate in 2021?
+The dataset does not have details of graduation rate.
+
+10.Which universities have IVY league status and view acceptance rate?
+	The dataset does not have details of IVY league status.
+
+11.Which universities require a minimum score of 7 bands in IELTS and TOEFL > = 100?
 The dataset does not have details of IELTS.
 Select University.University_Id, University_Name, GRE, TOEFL 
 from University left join Requirements On University.University_Id = Requirements.University_Id 
 where TOEFL >= 100;
 
-4.What is the acceptance rate of students with a CGPA > = 7?
+12.Determine which universities have GRE requirements such as Verbal > = 155, Quants > = 160, and AWA > = 3.
+All the universities in the dataset have combined GRE score requirement.
+
+13.What is the acceptance rate of students with a CGPA > = 7?
 Select University.University_Id, university_name, Chance_of_Admit 
 from University left join requirements 
 on University.University_ID = Requirements.University_ID where CGPA >= 7;
+
+14.What is the most popular course of study in the top 10–20 universities?
+The dataset does not have a details of courses.
+
+15.Which of the following private universities doesn’t have GRE or English proficiency exam requirements for application?
+All the universities in the dataset have combined GRE and IELTS/TOEFL requirement.
