@@ -24,9 +24,11 @@ colout = sorted_ds[["Serial No", "Institution", "National_Rank"]]
 #data reduction
 ds.drop(["publications", "influence", "citations", "broad_impact"], axis=1, inplace = True )
 # pd.set_option('display.max_columns', None)
+print("Data Reduction: ")
 print(ds.drop)
 
 #Audit Completeness
+print("Audit Completeness check")
 for col in ds.columns:
     miss = ds[col].isnull().sum()
     if miss>0:
@@ -34,19 +36,9 @@ for col in ds.columns:
     else:
         print("{} has NO missing value!".format(col))
 
-#Audit validity
-# check = Check(spark, CheckLevel.Warning, "Review Check")
-# checkResult = (
-#     VerificationSuite(spark).onData(ds).addCheck(
-# 	check.isUnique("Institution")).run())
-#
-# checkResult_ds = VerificationResult.checkResultsAsDataFrame(spark, checkResult)
-# checkResult_ds.show()
-
-# s = pd.Series(np.random.randn(5))
-# ds[["GRE Score"]].between(260,340)
 
 # data completeness
+print("Data Completeness")
 output_ds = pd.DataFrame(columns=['Count', 'Missing', 'Unique', 'Dtype', 'Mean', 'Mode', 'Min', '25%', 'Median', '75%', 'Max', 'Std', 'Skew'])
 for col in ds:
     if pd.api.types.is_numeric_dtype(ds[col]):
@@ -57,6 +49,7 @@ for col in ds:
 #pd.set_option('display.max_rows',100)
 print(output_ds)
 
+print("Validity check")
 #validity and accuracy
 #GRE score validation
 total_rows = 400
@@ -66,7 +59,7 @@ print("Count of accurate rows for GRE Score : ",sum)
 print("Percentage of GRE Score accuracy : ",(sum/total_rows)*100,"%")
 
 #TOEFL Score Validation
-print("\n\nValidating IELTS Score")
+print("\n\nValidating TOEFL Score")
 sum = ds['TOEFL Score'].between(80, 120).sum()
 print("Count of accurate rows for TOEFL Score : ",sum)
 print("Percentage of TOEFL Score accuracy : ",(sum/total_rows)*100,"%")
@@ -163,11 +156,11 @@ sns.lineplot(x = "Chance of Admit", y = "University ID",data=data_plot)
 plt.show()
 
 #Inserting data in the tables.
-
-print(type(ds))
+#pd.set_option('display.max_columns', None)
+print(ds)
 university = ds[["Serial No", "Institution", "Country", "National_Rank", "University Rating","Chance of Admit "]]
 standards = ds[["Serial No","Quality_of_Education", "Alumni_Employment", "Quality_of_Faculty", "Patents"]]
-requirements = ds[["Serial No","Year", "Score", "GRE Score", "TOEFL Score", "SOP", "LOR ","CGPA", "Research"]]
+requirements = ds[["Serial No","Academic_Year", "Score", "GRE Score", "TOEFL Score", "SOP", "LOR ","CGPA", "Research"]]
 
 mydb = mysql.connector.connect(host="localhost", user="root", password="Sh_reyasi03")
 mycursor = mydb.cursor()
@@ -183,7 +176,7 @@ for i in range(len(university)):
 
 
 print(requirements)
-requirements_sql = "INSERT INTO Requirements(University_ID, Year, Score, GRE, TOEFL, SOP, LOR, CGPA, Research)VALUES (%s, %s,%s,%s,%s,%s,%s,%s,%s)"
+requirements_sql = "INSERT INTO Requirements(University_ID, Academic_Year, Score, GRE, TOEFL, SOP, LOR, CGPA, Research)VALUES (%s, %s,%s,%s,%s,%s,%s,%s,%s)"
 for i in range(len(requirements)):
     requirements_val = (requirements.iloc[i,0].astype(str), requirements.iloc[i,1].astype(str), requirements.iloc[i,2].astype(str), requirements.iloc[i,3].astype(str), requirements.iloc[i,4].astype(str), requirements.iloc[i,5].astype(str), requirements.iloc[i,6].astype(str), requirements.iloc[i,7].astype(str), requirements.iloc[i,8].astype(str))
     mycursor.execute(requirements_sql, requirements_val)
