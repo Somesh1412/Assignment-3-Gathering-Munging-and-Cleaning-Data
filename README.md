@@ -25,4 +25,4 @@
 
 4.  Refer to Assignment-3-Gathering-Munging-and-Cleaning-Data/Use Cases.md file for all the use cases and their SQL queries.
 
-5.  Refer to Assignment-3-Gathering-Munging-and-Cleaning-Data/Previous Use Cases.md file for all the Previous Use cases and SQL queries for those cases which can be implemented in Assignment-3.
+5.  Refer to Assignment-3-Gathering-Munging-and-Cleaning-Data/Previous Use Cases.md file for all the previous use cases and SQL queries for those cases which can be implemented in Assignment-3.
