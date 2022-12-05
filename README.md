@@ -19,6 +19,8 @@
 
 1.  Clone the Assignment-3-Gathering-Munging-and-Cleaning-Data repository to local machine.
 
+git clone git@github.com:Somesh1412/Assignment-3-Gathering-Munging-and-Cleaning-Data.git
+
 2.  Execute Connector.py: It connects python to MySQL and creates the schema for the required tables.
 
 3. Execute Importing_Dataset.py: The dataset is segregated, and the file checks the accuracy of the data using various audits and uses data visualization to make the data more understandable. Leverages audit completeness to clean and verify the data, then stores the values in the appropriate tables.
