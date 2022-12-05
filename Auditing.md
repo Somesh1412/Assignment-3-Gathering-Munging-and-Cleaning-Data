@@ -21,11 +21,15 @@ Output:
 
 <img width="585" alt="Data_Reduction-1" src="https://user-images.githubusercontent.com/113796019/205573644-534788aa-265c-4062-b606-e3714e6be2d7.png">
 
+Output:
+
 <img width="493" alt="Data_Reduction-2" src="https://user-images.githubusercontent.com/113796019/205573680-fc10350b-1f6e-44a3-a028-ff18e2259f5a.png">
 
 ## GRE Score validation
 
 <img width="434" alt="GRE_Score Validation-1" src="https://user-images.githubusercontent.com/113796019/205573846-50c401ff-3a3a-4ac8-8831-41bf5c833e54.png">
+
+Output:
 
 <img width="301" alt="GRE_Score Validation-2" src="https://user-images.githubusercontent.com/113796019/205573750-fb852893-d55e-4237-86c4-affa9c10ab3c.png">
 
@@ -33,11 +37,15 @@ Output:
 
 <img width="441" alt="TOEFL_Score_Validation-1" src="https://user-images.githubusercontent.com/113796019/205573943-cd0f13bb-2e52-4cb7-9c0a-8fc17190547e.png">
 
+Output:
+
 <img width="309" alt="TOEFL_Score_Validation-2" src="https://user-images.githubusercontent.com/113796019/205574011-ca736404-1c36-40ff-b707-232c62b91deb.png">
 
 ## CGPA Validation
 
 <img width="437" alt="CGPA_Validation-1" src="https://user-images.githubusercontent.com/113796019/205574090-ce6d9209-b848-4d07-9e53-15e45a7a3b02.png">
+
+Output:
 
 <img width="321" alt="CGPA_Validation-2" src="https://user-images.githubusercontent.com/113796019/205574165-164137c3-1bb1-48af-88e8-143e9b9910c9.png">
 
@@ -45,11 +53,15 @@ Output:
 
 <img width="470" alt="Chance_Of_Admit-1" src="https://user-images.githubusercontent.com/113796019/205574266-89de1cd2-2d56-4c3e-ba24-68ddb08238a4.png">
 
+Output:
+
 <img width="314" alt="Chance_Of_Admit-2" src="https://user-images.githubusercontent.com/113796019/205574301-2a7fbca6-b134-47ca-ab23-c0619140647a.png">
 
 ## Uniqueness
 
 <img width="457" alt="Uniqueness-1" src="https://user-images.githubusercontent.com/113796019/205574381-d8f611ed-ec96-4366-b410-a09f38a4f5cf.png">
+
+Output:
 
 <img width="297" alt="Uniqueness-2" src="https://user-images.githubusercontent.com/113796019/205574428-537edfba-5ce1-4cd4-8f72-ea58e4878340.png">
 
